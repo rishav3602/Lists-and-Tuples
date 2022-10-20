@@ -1,14 +1,25 @@
-# Few commonly used list methods.
+l = ["Rishav",6,89,"box",True,76.34]
+print(len(l)) #prints the length of the list.
 
-list1 = [10,87877,394,65,8] #integer list
-list2 = ["Mayank","Rishav","Simran","Raj"] #string list
-list3 = [34,"Gaurav",45.8] #list can also have different datatypes
+# Creating an empty list.
 
-list1.sort()
-print(f"This is the sorted list1 : {list1}")
-print(list2.append("Swati"))
-print(f"Swati is added in list2 : {list2}")
-print(list3.reverse)
-print(f"This is reverse order of list3 : {list3}")
-list1.insert(2,90)
-print(f"This will print 90 at the index 3 in the list1 : {list1}")
+my_list = list() #recommended
+list = [] #not recommended
+print(type(my_list))
+print(type(list))
+# print(max(l)) # will throw an error cause there is no comparison between int and string
+
+for i in range (3):
+    inp = int(input("Enter your items : "))
+    list = list + [inp]
+    print(f"item_number : {i} | current list : {list}")
+    print(f"current_max : {max(list)}")
+print(f"The maximum of the given list : {max(list)}")
+
+
+for i in range (3):
+    inp = (input("Enter your items : "))
+    my_list = my_list + [inp]
+    print(f"item_number : {i} | current list : {my_list}")
+    print(f"current_max : {max(my_list)}")
+print(f"The maximum of the given list : {max(my_list)}")
